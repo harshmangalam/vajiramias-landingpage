@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <!-- bottom navigation on mobile device below 775px -->
+    <nav class="nav">
+        <a href="#" class="nav__link nav__link--active">
+            <i class="material-icons nav__icon">home</i>
+            <span class="nav__text">Home</span>
+        </a>
+
+        <a href="#" class="nav__link">
+            <i class="material-icons nav__icon">public</i>
+            <span class="nav__text">News</span>
+        </a>
+
+        <a href="#" class="nav__link">
+            <i class="material-icons nav__icon">laptop</i>
+            <span class="nav__text">Mcqs</span>
+        </a>
+
+        <a href="#" class="nav__link">
+            <i class="material-icons nav__icon">picture_as_pdf</i>
+            <span class="nav__text">Materials</span>
+        </a>
+
+        <a href="#" class="nav__link">
+            <i class="material-icons nav__icon">more_horiz</i>
+            <span class="nav__text">More</span>
+        </a>
+    </nav>
+    <!--x- bottom navigation  -x-->
+
+    <!-- top navigation on larger screen grater than 775px -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/logo_small.jpg" class="item small__logo" alt="">
+                <img src="./assets/images/logo.jpg" class="item large__logo" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav mr-auto"></div>
+                <ul class="navbar-nav mr-0">
+                    <li class="nav-item active mx-2">
+                        <a class="nav-link" href="#">
+                            <span class="material-icons">
+                                search
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item active mx-2">
+                        <a class="nav-link" href="#">
+                            <span class="material-icons">
+                                campaign
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">
+                            <span class="material-icons">
+                                event_note
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <button class="nav-link btn" style="color: rgb(122, 116, 116) !important;background-color: #f5f5f5 !important; border-radius: 5px !important;">
+                            Login
+                        </button>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <button class="nav-link btn" style="background: #f6982f !important;color:white !important; text-transform:uppercase;font-weight: 600;font-size:14px;">
+                            Register
+                        </button>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!--x- top navigation -x-->
+
+    <main class="my-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-3 mb-3">
+                    <div class="card shadow">
+                        <div class="login__card-container">
+
+                            <div class="login__upper-container">
+                                <div class="login__image-container">
+                                    <img src="./assets/images/guest_user.png" class="img" />
+                                </div>
+                            </div>
+
+                            <div class="login__lower-container">
+                                <div class="card__text">
+                                    not logged in
+                                </div>
+                                <button class="my-2 btn card__btn">click to login</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <!-- middle card -->
+                <div class="col-sm-12 col-md-12 col-lg-6">
+
+                    <!-- carousel top -->
+                    <div class="card shadow">
+                        <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-interval="5000">
+                                    <img src="./assets/images/car1.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item" data-interval="2000">
+                                    <img src="./assets/images/car2.png" class="d-block w-100" alt="...">
+                                </div>
+
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- carousel top end -->
+
+
+                    <!-- middle card after carousel -->
+                    <div class="card my-4 shadow">
+                        <div class="card-header" style="background: white !important;">
+                            <span class="material-icons float-left" style="font-size: 1.5rem !important;">
+                                laptop
+                            </span>
+                            <p class="mx-2 float-left my-0 text-bold">DAILY MCQ</p>
+
+
+                            <span class="material-icons float-right">
+                                turned_in_not
+                            </span>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="text-center">
+                                <div style="padding: 10px;background: #ffffdd;">
+                                    <img src="./assets/images/midd1.svg" alt="" style="vertical-align: middle; width:90px;">
+                                    <div class="my-3 text-center">
+                                        <h3 style="font-weight:bold;font-family: 'Lato',sans-serif;font-size:1rem;">31 May 2020 MCQs Test </h3>
+                                        <span class="mx-3">
+                                            <small>
+                                                10 Question</small>
+                                        </span>
+                                        <span class="mx-3">
+                                            <small> 20 minutes</small>
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-block btn-success btn-sm">START TEST</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="card my-4 shadow">
+                        <div class="card-header" style="background: white !important;">
+                            <span class="material-icons float-left" style="font-size: 1.5rem !important;">
+                                language
+                            </span>
+                            <p class="mx-2 float-left my-0 text-bold">CURRENT AFFAIRS</p>
+
+
+                            <span class="material-icons float-right">
+                                turned_in_not
+                            </span>
+                        </div>
+
+                        <div class="card-body">
+                            <div>
+                                <div style="padding: 10px;">
+                                    <h3 style="font-weight: bold !important; font-size: 1rem;">
+                                        COVID -19 INDIAN NATIONAL SUPERMODEL
+                                    </h3>
+                                    <p style="font-weight: 600 !important; font-size: 0.93rem;">
+                                        Department of Science and Technology (DST) has initiated a COVID-19 Indian National Supermodel to help monitor the future
+                                        transmission of infection.
+                                    </p>
+                                    <img class="card-img" src="./assets/images/r1.jpeg" alt="">
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card-footer">
+
+                            <div class="badge badge-pill badge-warning text-center py-3">
+
+                                <span class="text-center mx-3">
+                                    Health
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- middle card after carousel end -->
+
+                </div>
+
+                <!-- middle card end -->
+
+
+
+
+
+
+
+                <div class="col-sm-12 col-md-12 col-lg-3">
+                    <div class="card mb-3 shadow">
+                        <div class="card-header" style="background: white !important;">
+                            <span class="float-left" style="font-size: 0.9rem !important; font-weight: bold !important;">ANNOUNCEMENTS</span>
+                            <span class="float-right">
+                                <a href="#" style="text-decoration: none !important; text-transform: uppercase !important;font-size: 0.9375rem; font-weight: 700; color: #adbec7;">see all</a>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="" style="font-weight:bold !important;color: #444;font-family: 'Lato',sans-serif; font-size:0.95rem !important;">
+                                60 Days Prelim Strategy</div>
+                            <p class="text-muted" style="font-size:0.9rem !important;">60 Days Prelim Strategy - Phase 1 (April 2020)</p>
+                            <p class="hover alert alert-info" style="font-size:0.9rem !important;">
+                                <a href="#" style="text-decoration: none !important;">Note to students 60 Days Prelims Strategy.pdf </a>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="card shadow hover my-4">
+                        <div class="card-header" style="background: white !important">
+                            <span class="float-left" style="font-size: 0.9rem !important; font-weight: bold !important;">CURRENT AFFAIRS</span>
+                            <span class="float-right">
+                                <a href="#" style="text-decoration: none !important; text-transform: uppercase !important;font-size: 0.9375rem; font-weight: 600; color: #adbec7;">see all</a>
+                            </span>
+
+                            </span>
+                        </div>
+                        <div class="card mx-2 my-2" style="border:none !important;">
+
+                            <div class="my-2">
+                                <span class="float-left">
+                                    <img src="./assets/images/r1.jpeg" class="mr-3" alt="..." style="width: 90px;
+                                                            height: 90px;">
+                                </span>
+                                <p class="mb-1" style="font-size: 0.73rem !important;font-weight: 600 !important ;color: #777;">
+                                    COVID -19 INDIAN NATIONAL SUPERMODEL
+                                </p>
+                                <p class="mt-0" style="font-size: 0.6rem !important;">Department of Science and Technology ...</p>
+                            </div>
+
+                            <div class="my-2">
+                                    <span class="float-left">
+                                        <img src="./assets/images/r3.jpg" class="mr-3" alt="..." style="width: 90px;
+                                                                height: 90px;">
+                                    </span>
+                                    <p class="mb-1" style="font-size: 0.73rem !important;font-weight: 600 !important ;color: #777;">
+                                        COVID -19 INDIAN NATIONAL SUPERMODEL
+                                    </p>
+                                    <p class="mt-0" style="font-size: 0.6rem !important;">Department of Science and Technology ...</p>
+                                </div>
+
+
+                                <div class="my-2">
+                                        <span class="float-left">
+                                            <img src="./assets/images/r1.jpeg" class="mr-3" alt="..." style="width: 90px;
+                                                                    height: 90px;">
+                                        </span>
+                                        <p class="mb-1" style="font-size: 0.73rem !important;font-weight: 600 !important ;color: #777;">
+                                            COVID -19 INDIAN NATIONAL SUPERMODEL
+                                        </p>
+                                        <p class="mt-0" style="font-size: 0.6rem !important;">Department of Science and Technology ...</p>
+                                    </div>
+
+
+
+                                    <div class="my-2">
+                                            <span class="float-left">
+                                                <img src="./assets/images/r2.jpg" class="mr-3" alt="..." style="width: 90px;
+                                                                        height: 90px;">
+                                            </span>
+                                            <p class="mb-1" style="font-size: 0.73rem !important;font-weight: 600 !important ;color: #777;">
+                                                COVID -19 INDIAN NATIONAL SUPERMODEL
+                                            </p>
+                                            <p class="mt-0" style="font-size: 0.6rem !important;">Department of Science and Technology ...</p>
+                                        </div>
+
+
+
+
+                            <div>
+                                <span class="float-left">
+                                    <img src="./assets/images/r1.jpeg" class="mr-3" alt="..." style="width: 90px;
+                                                        height: 90px;">
+                                </span>
+                                <p class="mb-1" style="font-size: 0.73rem !important;font-weight: 600 !important ;color: #777;">
+                                    COVID -19 INDIAN NATIONAL SUPERMODEL
+                                </p>
+                                <p class="mt-0" style="font-size: 0.6rem !important;">Department of Science and Technology ...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
